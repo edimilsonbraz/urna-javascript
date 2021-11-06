@@ -5,5 +5,32 @@
       </a>
   </P>
 
-  URNA ELETRONICA
+  <h2>URNA ELETRONICA</h2> 
+  <p align="center">Esta aplicaçao foi desenvolvida durante a live "3 Projetos p/ Portfólio em Javascript para Iniciantes" do tutor: Bonieky Lacerda</p>
+  
 </h1>
+
+## TECNOLOGIAS
+- ⚛️ [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- ⚛️ [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- 💹 [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+## Testes
+[TESTE AQUI](https://edimilsonbraz.github.io/urna-javascript/)
+<p>VEREADORES VÁLIDOS</p> 
+<span>NUMERO: 92000</sapn><br>
+<span>NUMERO: 93000</sapn><br>
+<br>
+<p>PREFEITOS VÁLIDOS</p> 
+<span>NUMERO: 92</sapn><br>
+<span>NUMERO: 93</sapn><br>
+
+<br>
+
+## License
+[**Edimilson Braz**](https://www.linkedin.com/in/edimilsonbraz/)
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
