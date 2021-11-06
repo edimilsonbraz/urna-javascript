@@ -7,7 +7,7 @@ let numeros = document.querySelector('.d-1-left .d-1-3')
 
 let etapaAtual = 0;
 let numeroDigitado = ''; // vai guardar os numeros que o eleitor digitar
-let numeroEmBranco = false;
+let votoEmBranco = false;
 
 //Esta função limpa a tela
 function comecarEtapa() {
@@ -15,7 +15,7 @@ function comecarEtapa() {
 
   let numeroHtml = '';
   numeroDigitado = '';
-  numeroEmBranco = false;
+  votoEmBranco = false;
 
   //monta os quadrados de votacao
   for(let i=0; i < etapa.numeros; i++) {
@@ -54,7 +54,11 @@ function atualizaInterface() {
     
     let fotosHtml = '';
     for(let i in candidato.fotos) {
-      fotosHtml += `<div class="d-1-image"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+      if(candidato.fotos[i].small) {
+        fotosHtml += `<div class="d-1-image small"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+      }else{
+        fotosHtml += `<div class="d-1-image"><img src="images/${candidato.fotos[i].url}" alt="">${candidato.fotos[i].legenda}</div>`
+      }
     }
     lateral.innerHTML = fotosHtml;
   }else{
@@ -82,7 +86,7 @@ function clicou(value) {
 
 function branco() {
   if(numeroDigitado === '') {
-    numeroEmBranco = true;
+    votoEmBranco = true;
     seuVotoPara.style.display = 'block';
     aviso.style.display = 'block';
     numeros.innerHTML = '';
@@ -98,7 +102,27 @@ function corrige() {
   comecarEtapa();
 }
 function confirma() {
-  alert('Clicou em CONFIRMA');
+  let etapa = etapas[etapaAtual]
+
+  let votoConfirmado = false;
+
+  if(votoEmBranco === true) {
+    votoConfirmado = true;
+    console.log("confirmado como voto em BRANCO")
+  }else if(numeroDigitado.length === etapa.numeros) {
+    votoConfirmado = true;
+    console.log("Confirmando como " + numeroDigitado)
+  }
+
+  //chama a proxima votação (Prefeito)
+  if(votoConfirmado) {
+    etapaAtual++;
+    if(etapas[etapaAtual] !== undefined) {
+      comecarEtapa();
+    }else {
+      document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>'
+    }
+  }
 }
 
 comecarEtapa();
