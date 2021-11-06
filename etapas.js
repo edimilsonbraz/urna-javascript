@@ -1,10 +1,10 @@
 let etapas = [
   {
     titulo: 'VEREADOR',
-    numero: 5,
+    numeros: 5,
     candidatos: [
       {
-        numero: 92000,
+        numero: '92000',
         nome: 'Fulano de Tal',
         partido: 'ABC',
         fotos: [
@@ -12,7 +12,7 @@ let etapas = [
         ]
       },
       {
-        numero: 93000,
+        numero: '93000',
         nome: 'Beltrano da Silva',
         partido: 'DEF',
         fotos: [
@@ -23,10 +23,10 @@ let etapas = [
   },
   {
     titulo: 'PREFEITO',
-    numero: 2,
+    numeros: 2,
     candidatos: [
       {
-        numero: 92,
+        numero: '92',
         nome: 'Ciclano de Tal',
         partido: 'ABC',
         vice: 'Milena',
@@ -36,7 +36,7 @@ let etapas = [
         ]
       },
       {
-        numero: 93,
+        numero: '93',
         nome: 'Zulano de Tal',
         partido: 'DEF',
         Vice: 'Zelia',
