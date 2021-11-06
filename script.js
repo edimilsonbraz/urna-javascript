@@ -8,6 +8,7 @@ let numeros = document.querySelector('.d-1-left .d-1-3')
 let etapaAtual = 0;
 let numeroDigitado = ''; // vai guardar os numeros que o eleitor digitar
 let votoEmBranco = false;
+let votos = [];
 
 //Esta função limpa a tela
 function comecarEtapa() {
@@ -98,9 +99,11 @@ function branco() {
     comecarEtapa();
   }
 }
+
 function corrige() {
   comecarEtapa();
 }
+
 function confirma() {
   let etapa = etapas[etapaAtual]
 
@@ -108,10 +111,17 @@ function confirma() {
 
   if(votoEmBranco === true) {
     votoConfirmado = true;
+    votos.push({
+      etapa: etapas[etapaAtual].titulo,
+      voto: 'branco'
+    })
     console.log("confirmado como voto em BRANCO")
   }else if(numeroDigitado.length === etapa.numeros) {
     votoConfirmado = true;
-    console.log("Confirmando como " + numeroDigitado)
+    votos.push({
+      etapa: etapas[etapaAtual].titulo,
+      voto: numeroDigitado
+    })
   }
 
   //chama a proxima votação (Prefeito)
@@ -121,6 +131,7 @@ function confirma() {
       comecarEtapa();
     }else {
       document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>'
+      console.log(votos);
     }
   }
 }
