@@ -16,7 +16,7 @@ body {
   background: #dbd5c9;
   padding: 30px;
   display: flex;
-  margin: 15%;
+  margin: 15% 5% 15% 15%;
 }
 .tela {
   width: 500px;
@@ -158,4 +158,17 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+.legenda-valida {
+  /* width: 100%; */
+  height: auto;
+  background-color: rgb(217, 217, 217);
+  padding:  0 20px 0 20px;
+  border: 1px solid #403A3A;
+
+}
+
+.legenda-valida h2 {
+  text-transform: uppercase;
 }

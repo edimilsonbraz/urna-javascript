@@ -1,6 +1,6 @@
 let etapas = [
   {
-    titulo: 'VEREADOR',
+    titulo: 'DEPUTADO FEDERAL',
     numeros: 5,
     candidatos: [
       {
@@ -22,7 +22,7 @@ let etapas = [
     ]
   },
   {
-    titulo: 'PREFEITO',
+    titulo: 'GOVERNADOR',
     numeros: 2,
     candidatos: [
       {
@@ -40,6 +40,32 @@ let etapas = [
         nome: 'Zulano de Tal',
         partido: 'DEF',
         Vice: 'Zelia',
+        fotos: [
+          {url:'93.png', legenda: 'Prefeito'},
+          {url:'93_1.png', legenda: 'Vice-Prefeito', small: true}
+        ]
+      }
+    ]
+  },
+  {
+    titulo: 'PRESIDENTE',
+    numeros: 2,
+    candidatos: [
+      {
+        numero: '38',
+        nome: 'Giltrano de Tal',
+        partido: 'AA',
+        vice: 'Barão',
+        fotos: [
+          {url:'92.png', legenda: 'Prefeito'},
+          {url:'92_1.png', legenda: 'Vice-Prefeito', small: true}
+        ]
+      },
+      {
+        numero: '40',
+        nome: 'Deltrano de Tal',
+        partido: 'BB',
+        Vice: 'Zizão',
         fotos: [
           {url:'93.png', legenda: 'Prefeito'},
           {url:'93_1.png', legenda: 'Vice-Prefeito', small: true}

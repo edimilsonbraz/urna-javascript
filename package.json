@@ -1,0 +1,19 @@
+{
+  "name": "urna-javascript",
+  "version": "1.0.0",
+  "description": "Urna Eletronica desenvolvida com Javascript puro",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edimilsonbraz/urna-javascript.git"
+  },
+  "author": "Edimilsonbraz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edimilsonbraz/urna-javascript/issues"
+  },
+  "homepage": "https://github.com/edimilsonbraz/urna-javascript#readme"
+}
