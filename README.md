@@ -17,14 +17,17 @@
 
 ## Testes
 [TESTE AQUI](https://edimilsonbraz.github.io/urna-javascript/)
-<p>VEREADORES VÁLIDOS</p> 
+<p>DEPUTADOS VÁLIDOS</p> 
 <span>NUMERO: 92000</sapn><br>
 <span>NUMERO: 93000</sapn><br>
 <br>
-<p>PREFEITOS VÁLIDOS</p> 
+<p>GOVERNADORES VÁLIDOS</p> 
 <span>NUMERO: 92</sapn><br>
 <span>NUMERO: 93</sapn><br>
-
+<br>
+<p>PRESIDENTES VÁLIDOS</p> 
+<span>NUMERO: 38</sapn><br>
+<span>NUMERO: 40</sapn><br>
 <br>
 
 ## License
