@@ -5,8 +5,7 @@
       </a>
   </P>
 
-  <h2>URNA ELETRONICA</h2> 
-  <p align="center">Esta aplicaçao foi desenvolvida durante a live "3 Projetos p/ Portfólio em Javascript para Iniciantes" do tutor: Bonieky Lacerda</p>
+  <h2>URNA ELETRONICA</h2>   
   
 </h1>
 
